@@ -13,11 +13,26 @@ section {
     margin-left: 20px;
     margin-right: 20px;
 
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 16px;
     padding-right: 16px;
 }
 iframe {
     margin-bottom: 16px;
+}
+h2 {
+    padding: 0px;
+}
+p {
+    padding: 0px;
+}
+a {
+    padding: 0px 0px 0px 0px;
+}
+ion-icon {
+    font-size: 32px;
+    padding: 0px 0px 0px 0px;
 }
 
 
@@ -32,26 +47,33 @@ iframe {
     text-decoration: none;
     color: black;
 }
-.link_button {
-    display: flex;
-    justify-content: center;
-    float: center;
 
-    background-color: rgba(255, 255, 255, 0.5);
+/* Socials */
+.socials {
     border: 4px solid black;
-    text-align: center;
-
-    width: 50px;
-    height: 50px;
-    padding-left: 5px;
-    padding-right: 5px;
-
+}
+.social_icon {
     margin: auto;
+    text-decoration: none;
 }
-.link_button:hover {
-    background-color: rgba(94, 94, 94, 0.5);
+.discord {
+    color: rgb(0, 0, 0);
+    transition: 500ms;
 }
-.link_button img {
-    width: 40px;
-    height: 40px;
+.discord:hover {
+    color: rgb(88, 101, 242);
+}
+.twitter {
+    color: rgb(0, 0, 0);
+    transition: 500ms;
+}
+.twitter:hover {
+    color: rgb(0, 102, 255);
+}
+.youtube {
+    color: rgb(0, 0, 0);
+    transition: 500ms;
+}
+.youtube:hover {
+    color: rgb(255, 0, 0);
 }
