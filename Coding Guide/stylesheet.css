@@ -80,14 +80,9 @@ button {
 button:hover {
     background-color: #bebebe;
 }
-.code {
-    color: #ffffff;
-    background-color: #323232;
-    border: white;
-    padding: 4px;
-    border-radius: 5px;
-    display: block;
-    font-family: monospace;
+img {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .dark_mode_button {
     padding-top: 10px;
@@ -140,4 +135,38 @@ button:hover {
 }
 .dark_mode button:hover {
     background-color: rgb(34, 34, 34);
+}
+
+/* Code Stuff */
+pre.code {
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: rgb(82, 88, 92);
+    background-color: rgb(43, 47, 49);
+    color: rgb(211, 207, 201);
+    text-decoration-color: initial;
+}
+pre.code {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+    white-space: pre-wrap;
+    font-family: "Courier New", Monospace;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 6pt 0pt 6pt 0pt;
+    padding: 2pt 3pt;
+    overflow: auto;
+}
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
+.dark_mode pre.code {
+    background-color: #ffffff;
+    color: #000000;
 }
