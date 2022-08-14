@@ -1,17 +1,18 @@
 <html>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 
 <!-- Site Info For Browser-->
 <title>Merc Zone</title>
 
 <!-- Header -->
 <header>
-    <a href="Redirects/games index redirect.html"><img src="Logo.png" alt="Logo" /></a>
+    <a href="../gameindex.html" class="logo"><img src="Logo.png" alt="Logo"></a>
     <nav>
         <ul>
-            <li><a href="Redirects/games index redirect.html">Home</a></li>
-            <li><a href="Redirects/games a-z redirect.html">A-Z</a></li>
+            <li><a href="../gameindex.html">Home</a></li>
+            <li><a href="../games a-z.html">A-Z</a></li>
         </ul>
     </nav>
 </header>
@@ -45,24 +46,23 @@
 
 <!-- Fullscreen / Unfullscreen Button -->
 <div>
-    <button onclick="makeFullScreen(), showHideable()" >Fullscreen</button>
+    <button class="fullscreen_button" onclick="makeFullScreen(), showHideable()" ><span class="material-icons">fullscreen</span></button>
 </div>
 <div id="hideable" class="unfullscreen_button">
-    <button onclick="makeUnfullScreen(), hideHideable()" >Unfullscreen</button>
+    <button onclick="makeUnfullScreen(), hideHideable()" ><span class="material-icons">fullscreen_exit</span></button>
 </div>
+
 <script src="fullscreen.js"></script>
 
 <!-- Footer -->
 <footer>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Back To Main Site</a></li>
-        </ul>
-    </nav>
-    <p>-DISCLAIMER-</p>
-    <p>This site is not affiliated with <a href="https://www.gamelab.com/">gamelab.com</a> or any other sites named "GameLab"</p>
-    <!-- Copyright -->
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+    <section>
+        <button class="fullscreen_button" href="../../index.html">&#8629 Back To Main Site</button>
+        <p>-DISCLAIMER-</p>
+        <p>This site is not affiliated with <a href="https://www.gamelab.com/">gamelab.com</a> or any other sites named "GameLab"</p>
+        <!-- Copyright -->
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+    </section>
 </footer>
 
 </html>
