@@ -1,29 +1,280 @@
 // Load Details & Game
 window.onload = function() {
+    
     displayDetails()
 }
 
 // Get Parameters
 const parameters = new URLSearchParams(window.location.search)
 
-// See Details
+// Game List
 function displayDetails() {
+    
+    // ░░░██╗░██╗░
+    // ██████████╗
+    // ╚═██╔═██╔═╝
+    // ██████████╗
+    // ╚██╔═██╔══╝
+    // ░╚═╝░╚═╝░░░
+
     // 2048
     if (parameters.get('game') == "2048") {
         document.getElementById("gameName").innerHTML = "2048";
+        document.getElementById("tabName").innerHTML = "2048";
         document.getElementById("gameAuthor").innerHTML = "By Gabrielle Cirulli";
         document.getElementById("gameFrame").src = "https://funhtml5games.com?embed=2048bit";
     }
+    
+    // ░█████╗░
+    // ██╔══██╗
+    // ███████║
+    // ██╔══██║
+    // ██║░░██║
+    // ╚═╝░░╚═╝
+
+    // ██████╗░
+    // ██╔══██╗
+    // ██████╦╝
+    // ██╔══██╗
+    // ██████╦╝
+    // ╚═════╝░
+
     // Bloons TD 1
     if (parameters.get('game') == "bloons_td_1") {
         document.getElementById("gameName").innerHTML = "Bloons Tower Defense";
+        document.getElementById("tabName").innerHTML = "Bloons Tower Defense";
         document.getElementById("gameAuthor").innerHTML = "By Ninja Kiwi";
         document.getElementById("gameFrame").src = "https://www.crazygames.com/embed/bloons-tower-defense";
     }
     // Bloons TD 4
     if (parameters.get('game') == "bloons_td_4") {
         document.getElementById("gameName").innerHTML = "Bloons Tower Defense 4";
+        document.getElementById("tabName").innerHTML = "Bloons Tower Defense 4";
         document.getElementById("gameAuthor").innerHTML = "By Ninja Kiwi";
         document.getElementById("gameFrame").src = "https://www.addictinggames.com/embed/html5-games/20543";
     }
+    // Browser Quest
+    if (parameters.get('game') == "browser_quest") {
+        document.getElementById("gameName").innerHTML = "BrowserQuest";
+        document.getElementById("tabName").innerHTML = "BrowserQuest";
+        document.getElementById("gameAuthor").innerHTML = "By Mozilla";
+        document.getElementById("gameFrame").src = "https://browserquest.io/";
+    }
+
+    // ░█████╗░
+    // ██╔══██╗
+    // ██║░░╚═╝
+    // ██║░░██╗
+    // ╚█████╔╝
+    // ░╚════╝░
+
+    // Chess
+    if (parameters.get('game') == "chess") {
+        document.getElementById("gameName").innerHTML = "Chess";
+        document.getElementById("tabName").innerHTML = "Chess";
+        document.getElementById("gameAuthor").innerHTML = "By Unknown";
+        document.getElementById("gameFrame").src = "https://fritz.chessbase.com";
+    }
+
+    // ██████╗░
+    // ██╔══██╗
+    // ██║░░██║
+    // ██║░░██║
+    // ██████╔╝
+    // ╚═════╝░
+
+    // ███████╗
+    // ██╔════╝
+    // █████╗░░
+    // ██╔══╝░░
+    // ███████╗
+    // ╚══════╝
+    
+    // ███████╗
+    // ██╔════╝
+    // █████╗░░
+    // ██╔══╝░░
+    // ██║░░░░░
+    // ╚═╝░░░░░
+
+    // ░██████╗░
+    // ██╔════╝░
+    // ██║░░██╗░
+    // ██║░░╚██╗
+    // ╚██████╔╝
+    // ░╚═════╝░
+
+    // ██╗░░██╗
+    // ██║░░██║
+    // ███████║
+    // ██╔══██║
+    // ██║░░██║
+    // ╚═╝░░╚═╝
+
+    // Hexar.io
+    if (parameters.get('game') == "hexar_io") {
+        document.getElementById("gameName").innerHTML = "Hexar.io";
+        document.getElementById("tabName").innerHTML = "Hexar.io";
+        document.getElementById("gameAuthor").innerHTML = "By MochiBits";
+        document.getElementById("gameFrame").src = "http://hexar.io/full/index.html";
+    }
+
+    // ██╗
+    // ██║
+    // ██║
+    // ██║
+    // ██║
+    // ╚═╝
+
+    // Infinite Mario
+    if (parameters.get('game') == "infinite_mario") {
+        document.getElementById("gameName").innerHTML = "Infinite Mario";
+        document.getElementById("tabName").innerHTML = "Infinite Mario";
+        document.getElementById("gameAuthor").innerHTML = "By Notch";
+        document.getElementById("gameFrame").src = "https://openhtml5games.github.io/games-mirror/dist/mariohtml5/main.html";
+    }
+
+    // ░░░░░██╗
+    // ░░░░░██║
+    // ░░░░░██║
+    // ██╗░░██║
+    // ╚█████╔╝
+    // ░╚════╝░
+
+    // Just A Platformer
+    if (parameters.get('game') == "just_a_platformer") {
+        document.getElementById("gameName").innerHTML = "Just A Platformer";
+        document.getElementById("tabName").innerHTML = "Just A Platformer";
+        document.getElementById("gameAuthor").innerHTML = "By TheTastyPi";
+        document.getElementById("gameFrame").src = "https://thetastypi.github.io/just-a-platformer/";
+    }
+    // Jelly Mario
+    if (parameters.get('game') == "jelly_mario") {
+        document.getElementById("gameName").innerHTML = "Jelly Mario";
+        document.getElementById("tabName").innerHTML = "Jelly Mario";
+        document.getElementById("gameAuthor").innerHTML = "By Schteppe";
+        document.getElementById("gameFrame").src = "https://jellymar.io";
+    }
+
+    // ██╗░░██╗
+    // ██║░██╔╝
+    // █████═╝░
+    // ██╔═██╗░
+    // ██║░╚██╗
+    // ╚═╝░░╚═╝
+
+    // Krunker.io
+    if (parameters.get('game') == "krunker_io") {
+        document.getElementById("gameName").innerHTML = "Krunker.io";
+        document.getElementById("tabName").innerHTML = "Krunker.io";
+        document.getElementById("gameAuthor").innerHTML = "By Yendis Entertainment";
+        document.getElementById("gameFrame").src = "https://krunker.io";
+    }
+    
+    // ██╗░░░░░
+    // ██║░░░░░
+    // ██║░░░░░
+    // ██║░░░░░
+    // ███████╗
+    // ╚══════╝
+
+    // ███╗░░░███╗
+    // ████╗░████║
+    // ██╔████╔██║
+    // ██║╚██╔╝██║
+    // ██║░╚═╝░██║
+    // ╚═╝░░░░░╚═╝
+
+
+    // ███╗░░██╗
+    // ████╗░██║
+    // ██╔██╗██║
+    // ██║╚████║
+    // ██║░╚███║
+    // ╚═╝░░╚══╝
+
+    // ░█████╗░
+    // ██╔══██╗
+    // ██║░░██║
+    // ██║░░██║
+    // ╚█████╔╝
+    // ░╚════╝░
+
+    // ██████╗░
+    // ██╔══██╗
+    // ██████╔╝
+    // ██╔═══╝░
+    // ██║░░░░░
+    // ╚═╝░░░░░
+
+    // ░██████╗░
+    // ██╔═══██╗
+    // ██║██╗██║
+    // ╚██████╔╝
+    // ░╚═██╔═╝░
+    // ░░░╚═╝░░░
+
+    // ██████╗░
+    // ██╔══██╗
+    // ██████╔╝
+    // ██╔══██╗
+    // ██║░░██║
+    // ╚═╝░░╚═╝
+
+    // ░██████╗
+    // ██╔════╝
+    // ╚█████╗░
+    // ░╚═══██╗
+    // ██████╔╝
+    // ╚═════╝░
+
+    // ████████╗
+    // ╚══██╔══╝
+    // ░░░██║░░░
+    // ░░░██║░░░
+    // ░░░██║░░░
+    // ░░░╚═╝░░░
+
+    // ██╗░░░██╗
+    // ██║░░░██║
+    // ██║░░░██║
+    // ██║░░░██║
+    // ╚██████╔╝
+    // ░╚═════╝░
+
+    // ██╗░░░██╗
+    // ██║░░░██║
+    // ╚██╗░██╔╝
+    // ░╚████╔╝░
+    // ░░╚██╔╝░░
+    // ░░░╚═╝░░░
+
+
+    // ░██╗░░░░░░░██╗
+    // ░██║░░██╗░░██║
+    // ░╚██╗████╗██╔╝
+    // ░░████╔═████║░
+    // ░░╚██╔╝░╚██╔╝░
+    // ░░░╚═╝░░░╚═╝░░
+
+    // ██╗░░██╗
+    // ╚██╗██╔╝
+    // ░╚███╔╝░
+    // ░██╔██╗░
+    // ██╔╝╚██╗
+    // ╚═╝░░╚═╝
+
+    // ██╗░░░██╗
+    // ╚██╗░██╔╝
+    // ░╚████╔╝░
+    // ░░╚██╔╝░░
+    // ░░░██║░░░
+    // ░░░╚═╝░░░
+
+    // ███████╗
+    // ╚════██║
+    // ░░███╔═╝
+    // ██╔══╝░░
+    // ███████╗
+    // ╚══════╝
 }
