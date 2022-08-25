@@ -39,6 +39,14 @@ function displayDetails() {
     // ██████╦╝
     // ╚═════╝░
 
+    // Bloons
+    if (parameters.get('game') == "bloons_td_1") {
+        document.getElementById("gameName").innerHTML = "Bloons";
+        document.getElementById("tabName").innerHTML = "Bloonse";
+        document.getElementById("gameAuthor").innerHTML = "By Ninja Kiwi";
+        document.getElementById("gameFrame").src = "https://www.addictinggames.com/embed/html5-games/17154";
+    }
+
     // Bloons TD 1
     if (parameters.get('game') == "bloons_td_1") {
         document.getElementById("gameName").innerHTML = "Bloons Tower Defense";
@@ -178,6 +186,21 @@ function displayDetails() {
     // ███████╗
     // ╚══════╝
 
+    // Little Alchemy
+    if (parameters.get('game') == "little_alchemy_1") {
+        document.getElementById("gameName").innerHTML = "Little Alchemy";
+        document.getElementById("tabName").innerHTML = "Little Alchemy";
+        document.getElementById("gameAuthor").innerHTML = "By Jakub Koziol";
+        document.getElementById("gameFrame").src = "https://littlealchemy.com/";
+    }
+    // Little Alchemy 2
+    if (parameters.get('game') == "little_alchemy_2") {
+        document.getElementById("gameName").innerHTML = "Little Alchemy 2";
+        document.getElementById("tabName").innerHTML = "Little Alchemy 2";
+        document.getElementById("gameAuthor").innerHTML = "By Jakub Koziol";
+        document.getElementById("gameFrame").src = "https://littlealchemy2.com/";
+    }
+
     // ███╗░░░███╗
     // ████╗░████║
     // ██╔████╔██║
@@ -185,6 +208,20 @@ function displayDetails() {
     // ██║░╚═╝░██║
     // ╚═╝░░░░░╚═╝
 
+    // Mahjong
+    if (parameters.get('game') == "mahjong") {
+        document.getElementById("gameName").innerHTML = "Mahjong";
+        document.getElementById("tabName").innerHTML = "Mahjong";
+        document.getElementById("gameAuthor").innerHTML = "By Unknown";
+        document.getElementById("gameFrame").src = "https://www.free-play-mahjong.com/";
+    }
+    // Merc Zone
+    if (parameters.get('game') == "merc_zonje") {
+        document.getElementById("gameName").innerHTML = "Merc Zone";
+        document.getElementById("tabName").innerHTML = "Merc Zone";
+        document.getElementById("gameAuthor").innerHTML = "By Blue Wizard Digital";
+        document.getElementById("gameFrame").src = "https://merc.zone/";
+    }
 
     // ███╗░░██╗
     // ████╗░██║
@@ -228,12 +265,35 @@ function displayDetails() {
     // ██████╔╝
     // ╚═════╝░
 
+    // Shell Shockers
+    if (parameters.get('game') == "shell_shockers") {
+        document.getElementById("gameName").innerHTML = "Shell Shockers";
+        document.getElementById("tabName").innerHTML = "Shell Shockers";
+        document.getElementById("gameAuthor").innerHTML = "By Blue Wizard Digital";
+        document.getElementById("gameFrame").src = "https://shellshock.io/";
+    }
+    // Slope
+    if (parameters.get('game') == "slope") {
+        document.getElementById("gameName").innerHTML = "Slope";
+        document.getElementById("tabName").innerHTML = "Slope";
+        document.getElementById("gameAuthor").innerHTML = "By Rob Kay";
+        document.getElementById("gameFrame").src = "https://y8.com/embed/slope";
+    }
+
     // ████████╗
     // ╚══██╔══╝
     // ░░░██║░░░
     // ░░░██║░░░
     // ░░░██║░░░
     // ░░░╚═╝░░░
+
+    // Tank Mayhem
+    if (parameters.get('game') == "tank_mayhem") {
+        document.getElementById("gameName").innerHTML = "Tank Mayhem (2P)";
+        document.getElementById("tabName").innerHTML = "Tank Mayhem";
+        document.getElementById("gameAuthor").innerHTML = "By Gerald Duncan";
+        document.getElementById("gameFrame").src = "https://www.twoplayergames.org/embed/tank-mayhem";
+    }
 
     // ██╗░░░██╗
     // ██║░░░██║
