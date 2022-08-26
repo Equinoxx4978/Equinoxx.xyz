@@ -18,12 +18,12 @@ if (x.innerHTML === "light_mode") {
 // Functions To Set Darkmode Status
 function setDarkModeTrue() {
 document.cookie = "darkmode=true";
-document.getElementById('logo').src='Images/CodeIt (LIGHT).png';
+document.getElementById('logo').src='Lessons/Images/CodeIt (LIGHT).png';
 }
 
 function setDarkModeFalse() {
 document.cookie = "darkmode=false";
-document.getElementById('logo').src='Images/CodeIt (DARK).png';
+document.getElementById('logo').src='Lessons/Images/CodeIt (DARK).png';
 }
 
 // Get cookie value?
