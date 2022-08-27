@@ -40,9 +40,9 @@ function displayDetails() {
     // ╚═════╝░
 
     // Bloons
-    if (parameters.get('game') == "bloons_td_1") {
+    if (parameters.get('game') == "bloons") {
         document.getElementById("gameName").innerHTML = "Bloons";
-        document.getElementById("tabName").innerHTML = "Bloonse";
+        document.getElementById("tabName").innerHTML = "Bloons";
         document.getElementById("gameAuthor").innerHTML = "By Ninja Kiwi";
         document.getElementById("gameFrame").src = "https://www.addictinggames.com/embed/html5-games/17154";
     }
