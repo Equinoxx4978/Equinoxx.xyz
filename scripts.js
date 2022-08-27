@@ -18,12 +18,12 @@ if (x.innerHTML === "light_mode") {
 // Functions To Set Darkmode Status
 function setDarkModeTrue() {
 document.cookie = "darkmode=true";
-document.getElementById('logo').src='Main Site Resources/equinoxx.xyz(BIG LIGHT).png';
+document.getElementById('logo').src='https://equinoxx.xyz/Main Site Resources/equinoxx.xyz(BIG LIGHT).png';
 }
 
 function setDarkModeFalse() {
 document.cookie = "darkmode=false";
-document.getElementById('logo').src='Main Site Resources/equinoxx.xyz(BIG DARK).png';
+document.getElementById('logo').src='https://equinoxx.xyz/Main Site Resources/equinoxx.xyz(BIG DARK).png';
 }
 
 // Get cookie value?
