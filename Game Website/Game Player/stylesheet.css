@@ -15,6 +15,7 @@ body {
 }
 a {
     color: #00a2e8;
+    word-wrap: break-word
 }
 nav ul {
     list-style-type: none;

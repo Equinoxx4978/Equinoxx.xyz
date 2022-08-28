@@ -21,11 +21,9 @@ header h2 {
     color: #000000;
 }
 a {
-    text-decoration: none;
     color: #000000;
 }
 a:visited {
-    text-decoration: none;
     color: #000000;
 }
 nav ul {
@@ -87,10 +85,14 @@ button:hover {
     background-color: #bebebe;
 }
 img {
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     max-width: 350px;
     max-height: 1000px;
+}
+iframe {
+    width: 100%;
+    height: fit-content;
 }
 .dark_mode_button {
     padding-top: 10px;
@@ -115,11 +117,9 @@ img {
     color:white;
 }
 .dark_mode a {
-    text-decoration: none;
     color: #ffffff;
 }
 .dark_mode a:visited {
-    text-decoration: none;
     color: #ffffff;
 }
 .dark_mode section {
