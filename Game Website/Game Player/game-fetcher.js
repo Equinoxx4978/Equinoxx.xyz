@@ -216,7 +216,7 @@ function displayDetails() {
         document.getElementById("gameFrame").src = "https://www.free-play-mahjong.com/";
     }
     // Merc Zone
-    if (parameters.get('game') == "merc_zonje") {
+    if (parameters.get('game') == "merc_zone") {
         document.getElementById("gameName").innerHTML = "Merc Zone";
         document.getElementById("tabName").innerHTML = "Merc Zone";
         document.getElementById("gameAuthor").innerHTML = "By Blue Wizard Digital";
@@ -243,6 +243,14 @@ function displayDetails() {
     // ██╔═══╝░
     // ██║░░░░░
     // ╚═╝░░░░░
+
+    // Pokemon Showdown
+    if (parameters.get('game') == "pokemon_showdown") {
+        document.getElementById("gameName").innerHTML = "Pokemon Showdown";
+        document.getElementById("tabName").innerHTML = "Pokemon Showdown";
+        document.getElementById("gameAuthor").innerHTML = "By Zarel";
+        document.getElementById("gameFrame").src = "https://play.pokemonshowdown.com/";
+    }
 
     // ░██████╗░
     // ██╔═══██╗
