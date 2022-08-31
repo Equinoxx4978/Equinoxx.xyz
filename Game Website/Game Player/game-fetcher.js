@@ -97,6 +97,14 @@ function displayDetails() {
     // ██╔══╝░░
     // ███████╗
     // ╚══════╝
+
+    // EV.io
+    if (parameters.get('game') == "ev_io") {
+        document.getElementById("gameName").innerHTML = "EV.io";
+        document.getElementById("tabName").innerHTML = "EV.io";
+        document.getElementById("gameAuthor").innerHTML = "By Addicting Games";
+        document.getElementById("gameFrame").src = "https://ev.io/";
+    }
     
     // ███████╗
     // ██╔════╝
