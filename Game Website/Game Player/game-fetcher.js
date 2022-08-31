@@ -310,6 +310,13 @@ function displayDetails() {
         document.getElementById("gameAuthor").innerHTML = "By Rob Kay";
         document.getElementById("gameFrame").src = "https://y8.com/embed/slope";
     }
+    // Slither.io
+    if (parameters.get('game') == "slither_io") {
+        document.getElementById("gameName").innerHTML = "Slither.io";
+        document.getElementById("tabName").innerHTML = "Slither.io";
+        document.getElementById("gameAuthor").innerHTML = "By Rob Kay";
+        document.getElementById("gameFrame").src = "http://slither.io/";
+    }
 
     // ████████╗
     // ╚══██╔══╝
