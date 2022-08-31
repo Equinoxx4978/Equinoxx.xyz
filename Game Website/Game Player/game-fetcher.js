@@ -259,6 +259,13 @@ function displayDetails() {
         document.getElementById("gameAuthor").innerHTML = "By Zarel";
         document.getElementById("gameFrame").src = "https://play.pokemonshowdown.com/";
     }
+    // Pokemon Showdown
+    if (parameters.get('game') == "powerline_io") {
+        document.getElementById("gameName").innerHTML = "Powerline.io";
+        document.getElementById("tabName").innerHTML = "Powerline.io";
+        document.getElementById("gameAuthor").innerHTML = "By Andre Almeida";
+        document.getElementById("gameFrame").src = "http://powerline.io/";
+    }
 
     // ░██████╗░
     // ██╔═══██╗
