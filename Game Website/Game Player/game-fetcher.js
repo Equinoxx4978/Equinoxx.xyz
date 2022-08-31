@@ -238,6 +238,14 @@ function displayDetails() {
     // ██║░╚███║
     // ╚═╝░░╚══╝
 
+    // Nobreaks.io
+    if (parameters.get('game') == "nobrakes_io") {
+        document.getElementById("gameName").innerHTML = "Nobrakes.io";
+        document.getElementById("tabName").innerHTML = "Nobrakes.io";
+        document.getElementById("gameAuthor").innerHTML = "By Totebo";
+        document.getElementById("gameFrame").src = "https://nobrakesio.totebo.com/";
+    }
+
     // ░█████╗░
     // ██╔══██╗
     // ██║░░██║
