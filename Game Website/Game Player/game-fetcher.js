@@ -267,7 +267,7 @@ function displayDetails() {
         document.getElementById("gameAuthor").innerHTML = "By Zarel";
         document.getElementById("gameFrame").src = "https://play.pokemonshowdown.com/";
     }
-    // Pokemon Showdown
+    // Powerline.io
     if (parameters.get('game') == "powerline_io") {
         document.getElementById("gameName").innerHTML = "Powerline.io";
         document.getElementById("tabName").innerHTML = "Powerline.io";
