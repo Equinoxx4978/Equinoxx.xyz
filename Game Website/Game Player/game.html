@@ -3,9 +3,6 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
-<!-- TESTING -->
-<script src="game-fetcher.js"></script>
-
 <!-- Site Info For Browser-->
 <title id="tabName"></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,15 +47,34 @@
 </div>
 </section>
 
-<!-- Fullscreen / Unfullscreen Button -->
+<!-- Below Game Buttons -->
 <div>
     <button class="fullscreen_button" onclick="makeFullScreen(), showHideable()" ><span class="material-icons">fullscreen</span></button>
+    <button class="fullscreen_button" id="shareMenuButton"><span class="material-icons">share</span></button>
 </div>
+
+<!-- Share Menu -->
+<div id="shareMenu" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <button class="closeShareMenuButton"><span class="material-icons">close</span></button>
+    <h1>Share This Game</h1>
+    <p><div id="shareLink"></div></p>
+    <button onclick="copyLink()"><span class="material-icons">content_copy</span></button>
+  </div>
+
+</div>
+
+<!-- Unfullscreen Button -->
 <div id="hideable" class="unfullscreen_button">
     <button onclick="makeUnfullScreen(), hideHideable()" ><span class="material-icons">fullscreen_exit</span></button>
 </div>
 
+<!-- Scripts That Have To Be Here For Some Reason -->
+<script src="share-menu.js"></script>
 <script src="fullscreen.js"></script>
+<script src="game-fetcher.js"></script>
 
 <!-- Footer -->
 <footer>

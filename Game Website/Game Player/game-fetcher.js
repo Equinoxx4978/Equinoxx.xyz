@@ -376,3 +376,14 @@ function displayDetails() {
     // ███████╗
     // ╚══════╝
 }
+
+// Game Share Link Generator
+const siteLink = "https://equinoxx.xyz/Game%20Website/Game%20Player/game.html?game=" + parameters.get('game')
+document.getElementById("shareLink").innerHTML = siteLink;
+
+// Copy to clipboard button
+function copyLink() {
+    navigator.clipboard.writeText(siteLink).then(() => {
+        alert("Copied link to clipboard");
+    });
+}
