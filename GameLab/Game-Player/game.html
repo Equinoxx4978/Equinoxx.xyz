@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="stylesheet.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="../favicon.ico">
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
 
 <!-- Site Info For Browser-->
 <title id="tabName"></title>
@@ -60,8 +61,9 @@
   <div class="modal-content">
     <button class="closeShareMenuButton"><span class="material-icons">close</span></button>
     <h1>Share This Game</h1>
-    <p><div id="shareLink"></div></p>
-    <button onclick="copyLink()"><span class="material-icons">content_copy</span></button>
+    <a><div id="shareLink"></div></a>
+    <button onclick="copyLink()" class="shareButton"><span class="material-icons">content_copy</span></button>
+    <a id="twitterLink" target="_blank"><button class="shareButton"><iconify-icon icon="mdi:twitter"></iconify-icon></button></a>
   </div>
 
 </div>
