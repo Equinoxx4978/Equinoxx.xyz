@@ -378,7 +378,7 @@ function displayDetails() {
 }
 
 // Game Share Link Generator
-const siteLink = "https://equinoxx.xyz/Game%20Website/Game%20Player/game.html?game=" + parameters.get('game');
+const siteLink = "https://equinoxx.xyz/GameLab/Game-Player/game.html?game=" + parameters.get('game');
 document.getElementById("shareLink").innerHTML = siteLink;
 
 // https://twitter.com/intent/tweet?text=.%40Apple%2C%20stop%20breaking%20my%20texting%20experience.%20%23GetTheMessage%0A&url=https%3A%2F%2Fandroid.com%2Fget-the-message
