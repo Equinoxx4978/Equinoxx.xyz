@@ -394,5 +394,9 @@ function copyLink() {
 function loadLinks() {
     // Twitter Link
     twitterLink = "https://twitter.com/intent/tweet?text=Play%20" + document.getElementById("gameName").innerHTML + "%20On%20GameLab!" + "&url=" + siteLink;
+    // Facebook Link
+    facebookLink = "https://www.facebook.com/sharer/sharer.php?u=" + siteLink;
+    // Load Links
     document.getElementById("twitterLink").href = twitterLink;
+    document.getElementById("facebookLink").href = facebookLink;
 }
