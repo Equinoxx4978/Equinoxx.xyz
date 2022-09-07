@@ -76,14 +76,21 @@ function displayDetails() {
     // ╚█████╔╝
     // ░╚════╝░
 
-    // Chess
+    // Chess (AI)
     if (parameters.get('game') == "chess") {
-        document.getElementById("gameName").innerHTML = "Chess";
-        document.getElementById("tabName").innerHTML = "Chess";
+        document.getElementById("gameName").innerHTML = "Chess (AI)";
+        document.getElementById("tabName").innerHTML = "Chess (AI)";
         document.getElementById("gameAuthor").innerHTML = "By Unknown";
         document.getElementById("gameFrame").src = "https://fritz.chessbase.com";
     }
-    // Chess
+    // Chess (2P)
+    if (parameters.get('game') == "chess_two_player") {
+        document.getElementById("gameName").innerHTML = "Chess (2P)";
+        document.getElementById("tabName").innerHTML = "Chess (2P)";
+        document.getElementById("gameAuthor").innerHTML = "By Unknown";
+        document.getElementById("gameFrame").src = "https://openprocessing.org/sketch/309165/embed/";
+    }
+    // Conway's Game of Life
     if (parameters.get('game') == "conways_game_of_life") {
         document.getElementById("gameName").innerHTML = "Conway's Game of Life";
         document.getElementById("tabName").innerHTML = "Conway's Game of Life";

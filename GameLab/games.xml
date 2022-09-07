@@ -20,6 +20,7 @@
     <!-- C -->
     <url>
         <loc>https://equinoxx.xyz/GameLab/Game-Player/game.html?game=chess</loc>
+        <loc>https://equinoxx.xyz/GameLab/Game-Player/game.html?game=chess_two_player</loc>
         <loc>https://equinoxx.xyz/GameLab/Game-Player/game.html?game=conways_game_of_life</loc>
     </url>
     <!-- D -->
