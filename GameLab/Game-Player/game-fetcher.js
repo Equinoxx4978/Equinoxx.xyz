@@ -83,6 +83,13 @@ function displayDetails() {
         document.getElementById("gameAuthor").innerHTML = "By Unknown";
         document.getElementById("gameFrame").src = "https://fritz.chessbase.com";
     }
+    // Chess
+    if (parameters.get('game') == "conways_game_of_life") {
+        document.getElementById("gameName").innerHTML = "Conway's Game of Life";
+        document.getElementById("tabName").innerHTML = "Conway's Game of Life";
+        document.getElementById("gameAuthor").innerHTML = "By John Conway";
+        document.getElementById("gameFrame").src = "https://playgameoflife.com";
+    }
 
     // ██████╗░
     // ██╔══██╗
