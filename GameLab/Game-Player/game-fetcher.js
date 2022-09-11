@@ -9,6 +9,19 @@ const parameters = new URLSearchParams(window.location.search)
 
 // Game List
 function displayDetails() {
+    // 404 Game Not Found
+    document.getElementById("gameName").innerHTML = "Error 404";
+    document.getElementById("tabName").innerHTML = "Error 404";
+    document.getElementById("gameAuthor").innerHTML = "Game Not Found";
+    document.getElementById("gameFrame").src = "404.html";
+
+    // 404 Parameters Not Found
+    if (parameters.has('game') == false) {
+        document.getElementById("gameName").innerHTML = "Error 404";
+        document.getElementById("tabName").innerHTML = "Error 404";
+        document.getElementById("gameAuthor").innerHTML = "Game Not Found";
+        document.getElementById("gameFrame").src = "404.html";
+    }
     
     // ░░░██╗░██╗░
     // ██████████╗
@@ -77,25 +90,18 @@ function displayDetails() {
     // ░╚════╝░
 
     // Chess (AI)
-    if (parameters.get('game') == "chess") {
-        document.getElementById("gameName").innerHTML = "Chess (AI)";
-        document.getElementById("tabName").innerHTML = "Chess (AI)";
-        document.getElementById("gameAuthor").innerHTML = "By Unknown";
+    if (parameters.get('game') == "advanced_chess") {
+        document.getElementById("gameName").innerHTML = "Advanced Chess (AI)";
+        document.getElementById("tabName").innerHTML = "Advanced Chess";
+        document.getElementById("gameAuthor").innerHTML = "By Chessbase";
         document.getElementById("gameFrame").src = "https://fritz.chessbase.com";
     }
     // Chess (2P)
-    if (parameters.get('game') == "chess_two_player") {
-        document.getElementById("gameName").innerHTML = "Chess (2P)";
-        document.getElementById("tabName").innerHTML = "Chess (2P)";
-        document.getElementById("gameAuthor").innerHTML = "By Unknown";
-        document.getElementById("gameFrame").src = "https://openprocessing.org/sketch/309165/embed/";
-    }
-    // Conway's Game of Life
-    if (parameters.get('game') == "conways_game_of_life") {
-        document.getElementById("gameName").innerHTML = "Conway's Game of Life";
-        document.getElementById("tabName").innerHTML = "Conway's Game of Life";
-        document.getElementById("gameAuthor").innerHTML = "By John Conway";
-        document.getElementById("gameFrame").src = "https://playgameoflife.com";
+    if (parameters.get('game') == "chess") {
+        document.getElementById("gameName").innerHTML = "Chess (2P & AI)";
+        document.getElementById("tabName").innerHTML = "Chess";
+        document.getElementById("gameAuthor").innerHTML = "By Silver Games";
+        document.getElementById("gameFrame").src = "https://f3.silvergames.com/m/2-player-chess/";
     }
 
     // ██████╗░
