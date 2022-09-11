@@ -19,7 +19,7 @@ function displayDetails() {
     if (parameters.has('game') == false) {
         document.getElementById("gameName").innerHTML = "Error 404";
         document.getElementById("tabName").innerHTML = "Error 404";
-        document.getElementById("gameAuthor").innerHTML = "Game Not Found";
+        document.getElementById("gameAuthor").innerHTML = "Game Parameters Not Found";
         document.getElementById("gameFrame").src = "404.html";
     }
     
