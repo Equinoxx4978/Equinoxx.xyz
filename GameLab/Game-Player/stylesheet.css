@@ -91,6 +91,18 @@ div.unfullscreen_button {
     position:fixed;
     bottom: 5px;
     right: 10px;
+    bottom: 0px;
+    right: 0px;
+}
+div.unfullscreen_button button {
+    padding: 0;
+    margin-bottom: 0px;
+    width: 34px;
+    height: 34px;
+    opacity: 0.1;
+}
+div.unfullscreen_button button:hover {
+    opacity: 1;
 }
 div.show_unfullscreen_button {
     position:fixed;
