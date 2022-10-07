@@ -69,14 +69,23 @@ iframe.fullScreen {
     top: 0;
     left: 0;
     border: none;
+    overflow: hidden;
 }
 body.fullScreen {
     margin: 0px;
+    padding: 0;
 }
 iframe.unfullScreen {
     border: 4px solid rgb(0, 0, 0);
     width: 100%;
     height: 600px;
+}
+body.unfullScreen {
+    margin-top: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 div.unfullscreen_button {
     position:fixed;

@@ -1,11 +1,11 @@
 function makeFullScreen() {
     document.getElementsByTagName("iframe")[0].className = "fullScreen";
-    var elem = document.body;
+    document.getElementsByTagName("body")[0].className = "fullScreen";
 }
 
 function makeUnfullScreen() {
     document.getElementsByTagName("iframe")[0].className = "unfullScreen";
-    var elem = document.body;
+    document.getElementsByTagName("body")[0].className = "unfullScreen";
 }
 
 document.getElementById("hideable").style.display ="none";
