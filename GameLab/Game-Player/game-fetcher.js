@@ -375,6 +375,14 @@ function displayDetails() {
     // ░░╚██╔╝░╚██╔╝░
     // ░░░╚═╝░░░╚═╝░░
 
+    // We Become What We Behold
+    if (parameters.get('game') == "we_become_what_we_behold") {
+        document.getElementById("gameName").innerHTML = "We Become What We Behold";
+        document.getElementById("tabName").innerHTML = "We Become What We Behold";
+        document.getElementById("gameAuthor").innerHTML = "By Nicky Case";
+        document.getElementById("gameFrame").src = "https://v6p9d9t4.ssl.hwcdn.net/html/300364/index.html";
+    }
+
     // ██╗░░██╗
     // ╚██╗██╔╝
     // ░╚███╔╝░
@@ -400,8 +408,6 @@ function displayDetails() {
 // Game Share Link Generator
 const siteLink = "https://equinoxx.xyz/GameLab/Game-Player/game.html?game=" + parameters.get('game');
 document.getElementById("shareLink").innerHTML = siteLink;
-
-// https://twitter.com/intent/tweet?text=.%40Apple%2C%20stop%20breaking%20my%20texting%20experience.%20%23GetTheMessage%0A&url=https%3A%2F%2Fandroid.com%2Fget-the-message
 
 // Copy to clipboard button
 function copyLink() {
