@@ -1,0 +1,50 @@
+<head>
+    <link rel="stylesheet" href="./assets/commands.css">
+    <script src="./assets/commands.js"></script>
+    <script src="https://kit.fontawesome.com/3e1b3aea89.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <a href="./index.html"><img id="logo" src="assets/logo.png"></a>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./commands.html">Commands</a></li>
+            <li><a href="https://discord.gg/F9kj4U59EU">Support</a></li>
+        </ul>
+    </nav>
+    <button id="serverInviteButton">+ Invite</button>
+</header>
+<div class="sidenav">
+    <a href="./commands.html">Commands Home</a>
+    <button class="dropdown-btn">Tools
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="./commands/tools/help.html">Help</a>
+        <a href="./commands/tools/ping.html">Ping</a>
+        <a href="./commands/tools/echo.html">Echo</a>
+        <a href="./commands/tools/database.html">Database</a>
+        <a href="./commands/tools/selfpromo.html">Selfpromo</a>
+    </div>
+</div>
+<div class="main">
+    <h2>Command Name</h2>
+    <p>Command Description.</p>
+</div>
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+        });
+    }
+</script>
