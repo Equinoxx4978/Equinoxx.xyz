@@ -35,6 +35,12 @@ header nav ul li {
   padding-left: 8px;
   font-weight: bold;
 }
+.description {
+  font-style: italic;
+}
+.arguments {
+  white-space: pre;
+}
 #logo {
   position: fixed;
   top: -1px;
@@ -65,7 +71,8 @@ header nav ul li {
 /* Fixed sidenav, full height */
 .sidenav {
   margin-top: 50px;
-  height: 100%;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
   width: 200px;
   position: fixed;
   z-index: 1;
@@ -74,6 +81,17 @@ header nav ul li {
   background-color: #111;
   overflow-x: hidden;
   padding-top: 5px;
+}
+.sidenav::-webkit-scrollbar {
+  width: 5px;
+  background-color: #111;
+  border-right: 1px solid #111;
+}
+.sidenav::-webkit-scrollbar-thumb {
+  width: 5px;
+  margin-left: 1px;
+  margin-right: 1px;
+  background: #818181;
 }
 /* Style the sidenav links and the dropdown button */
 .sidenav a,
@@ -102,7 +120,15 @@ header nav ul li {
   margin-top: 50px;
   margin-left: 200px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
-  padding: 1px 10px;
+  padding: 10px 10px;
+}
+.main h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.main h2 {
+  margin-top: 0px;
+  font-size: larger;
 }
 
 /* Add an active class to the active dropdown button */
@@ -114,7 +140,7 @@ header nav ul li {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color: #111;
   padding-left: 8px;
 }
 
@@ -122,6 +148,16 @@ header nav ul li {
 .fa-caret-down {
   float: right;
   padding-right: 8px;
+}
+
+/* Caret Rotation */
+button.dropdown-btn.active i.fa-caret-down {
+  transform: rotate(180deg);
+  padding-left: 8px;
+  padding-bottom: 2px;
+}
+button.dropdown-btn i.fa-caret-down {
+  transform: rotate(0deg);
 }
 
 /* Some media queries for responsiveness */
