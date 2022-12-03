@@ -90,6 +90,7 @@ button {
     flex: 30%;
 }
 .leftAsideContent {
+    background-color: var(--background);
     text-align: center;
     border: 4px solid white;
 
@@ -99,4 +100,7 @@ button {
     padding-right: 16px;
 
     flex: 30%;
+}
+#main {
+    font-size: 1.5em;
 }
