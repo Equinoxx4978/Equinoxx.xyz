@@ -68,7 +68,12 @@ button {
 }
 .content {
     background-color: var(--background);
+
+    display: flex;
+    align-items:center;
+    justify-content:center;
     text-align: center;
+
     border: 4px solid white;
 
     margin-bottom: 16px;
@@ -79,8 +84,12 @@ button {
 }
 .asideContent {
     background-color: var(--background);
-    text-align: center;
     border: 4px solid white;
+
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
 
     margin-left: 16px;
     margin-bottom: 16px;
@@ -91,8 +100,12 @@ button {
 }
 .leftAsideContent {
     background-color: var(--background);
-    text-align: center;
     border: 4px solid white;
+
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
 
     margin-right: 16px;
     margin-bottom: 16px;
@@ -102,5 +115,7 @@ button {
     flex: 30%;
 }
 #main {
+    text-align: center;
+    display: block;
     font-size: 1.5em;
 }
