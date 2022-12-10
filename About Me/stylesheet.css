@@ -73,6 +73,7 @@ button {
     align-items:center;
     justify-content:center;
     text-align: center;
+    flex-direction: column;
 
     border: 4px solid white;
 
@@ -90,6 +91,7 @@ button {
     align-items:center;
     justify-content:center;
     text-align: center;
+    flex-direction: column;
 
     margin-left: 16px;
     margin-bottom: 16px;
@@ -106,6 +108,7 @@ button {
     align-items:center;
     justify-content:center;
     text-align: center;
+    flex-direction: column;
 
     margin-right: 16px;
     margin-bottom: 16px;
@@ -115,7 +118,8 @@ button {
     flex: 30%;
 }
 #main {
-    text-align: center;
-    display: block;
     font-size: 1.5em;
+}
+#main h2 {
+    margin-bottom: 0px;
 }
